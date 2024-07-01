@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: BULDROG.ggsk
-// Generated 2024-07-01T20:39:30
+// Generated 2024-07-01T20:48:04
 
 function pano2vrSkin(player,base) {
 	player.addVariable('TITLES', 2, false);
@@ -1723,7 +1723,7 @@ function pano2vrSkin(player,base) {
 		el.appendChild(elo);
 		el.ggId="enter_vr";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=true;
+		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
@@ -1731,8 +1731,8 @@ function pano2vrSkin(player,base) {
 		hs+='height : 32px;';
 		hs+='position : absolute;';
 		hs+='right : 5px;';
-		hs+='top : 8px;';
-		hs+='visibility : inherit;';
+		hs+='top : 7px;';
+		hs+='visibility : hidden;';
 		hs+='width : 32px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
@@ -1746,7 +1746,7 @@ function pano2vrSkin(player,base) {
 		me._enter_vr.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getViewerSize().width == true))
+				((player.getIsMobile() == true))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -1762,8 +1762,8 @@ function pano2vrSkin(player,base) {
 					me._enter_vr.ggVisible=true;
 				}
 				else {
-					me._enter_vr.style.visibility=(Number(me._enter_vr.style.opacity)>0||!me._enter_vr.style.opacity)?'inherit':'hidden';
-					me._enter_vr.ggVisible=true;
+					me._enter_vr.style.visibility="hidden";
+					me._enter_vr.ggVisible=false;
 				}
 			}
 		}
@@ -3303,7 +3303,6 @@ this.__div.style.top = vs.height / 2 + "px";
 	style.type = 'text/css';
 	style.appendChild(document.createTextNode('.ggskin { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px;}'));
 	document.head.appendChild(style);
-	me._enter_vr.logicBlock_visible();
 	me._tt_enter_vr.logicBlock_position();
 	me._room_1a.logicBlock_scaling();
 	me._room_1a.logicBlock_backgroundcolor();
@@ -3321,8 +3320,10 @@ this.__div.style.top = vs.height / 2 + "px";
 	me._meeting_table_and_chairs_2.logicBlock_alpha();
 	me._coffe_area.logicBlock_alpha();
 	me._information.logicBlock_visible();
-	player.addListener('sizechanged', function(args) { me._enter_vr.logicBlock_visible();me._tt_enter_vr.logicBlock_position(); });
+	me._enter_vr.logicBlock_visible();
+	player.addListener('sizechanged', function(args) { me._tt_enter_vr.logicBlock_position(); });
 	player.addListener('changenode', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor();me._meeting_table_and_chairs_1.logicBlock_alpha();me._mounted_screen_1.logicBlock_alpha();me._mounted_screen_2.logicBlock_alpha();me._meeting_table_and_chairs_2.logicBlock_alpha();me._coffe_area.logicBlock_alpha();me._information.logicBlock_visible(); });
+	player.addListener('configloaded', function(args) { me._enter_vr.logicBlock_visible(); });
 	player.addListener('varchanged_vis_info_popup', function(args) { me._information.logicBlock_visible(); });
 	player.addListener('varchanged_TITLES', function(args) { me._meeting_table_and_chairs_1.logicBlock_alpha();me._mounted_screen_1.logicBlock_alpha();me._mounted_screen_2.logicBlock_alpha();me._meeting_table_and_chairs_2.logicBlock_alpha();me._coffe_area.logicBlock_alpha(); });
 	player.addListener('varchanged_var_hs', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor(); });
