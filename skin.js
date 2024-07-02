@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1.13/18080
 // Filename: BULDROG.ggsk
-// Generated 2024-07-01T20:48:04
+// Generated 2024-07-01T22:33:50
 
 function pano2vrSkin(player,base) {
 	player.addVariable('TITLES', 2, false);
@@ -536,7 +536,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 50px;';
 		hs+='left : 127px;';
 		hs+='position : absolute;';
-		hs+='top : 147px;';
+		hs+='top : 142px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -558,7 +558,8 @@ function pano2vrSkin(player,base) {
 			var newLogicStateScaling;
 			if (
 				((player.getVariableValue('var_hs') == 1)) && 
-				((player.getVariableValue('activeRoom1A') == false))
+				((player.getVariableValue('activeRoom1A') == false)) && 
+				((me.ggUserdata.title != "Room 1A"))
 			)
 			{
 				newLogicStateScaling = 0;
@@ -584,6 +585,7 @@ function pano2vrSkin(player,base) {
 		me._room_1a.logicBlock_backgroundcolor = function() {
 			var newLogicStateBackgroundColor;
 			if (
+				((me.ggUserdata.title == "Room 1A")) || 
 				((player.getVariableValue('activeRoom1A') == true))
 			)
 			{
@@ -596,6 +598,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateBackgroundColor = 1;
 			}
+			else if (
+				((player.getVariableValue('var_hs') == 1)) && 
+				((me.ggUserdata.title != "Room 1A"))
+			)
+			{
+				newLogicStateBackgroundColor = 2;
+			}
 			else {
 				newLogicStateBackgroundColor = -1;
 			}
@@ -606,6 +615,9 @@ function pano2vrSkin(player,base) {
 					me._room_1a.style.backgroundColor="rgba(208,96,45,1)";
 				}
 				else if (me._room_1a.ggCurrentLogicStateBackgroundColor == 1) {
+					me._room_1a.style.backgroundColor="rgba(255,255,255,1)";
+				}
+				else if (me._room_1a.ggCurrentLogicStateBackgroundColor == 2) {
 					me._room_1a.style.backgroundColor="rgba(255,255,255,1)";
 				}
 				else {
@@ -637,9 +649,9 @@ function pano2vrSkin(player,base) {
 		hs+='border : 1px solid #0c1154;';
 		hs+='cursor : default;';
 		hs+='height : 50px;';
-		hs+='left : 246px;';
+		hs+='left : 247px;';
 		hs+='position : absolute;';
-		hs+='top : 142px;';
+		hs+='top : 140px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -661,7 +673,8 @@ function pano2vrSkin(player,base) {
 			var newLogicStateScaling;
 			if (
 				((player.getVariableValue('var_hs') == 1)) && 
-				((player.getVariableValue('activeRoom1B') == false))
+				((player.getVariableValue('activeRoom1B') == false)) && 
+				((me.ggUserdata.title != "Room 1B"))
 			)
 			{
 				newLogicStateScaling = 0;
@@ -687,6 +700,7 @@ function pano2vrSkin(player,base) {
 		me._room_1b.logicBlock_backgroundcolor = function() {
 			var newLogicStateBackgroundColor;
 			if (
+				((me.ggUserdata.title == "Room 1B")) || 
 				((player.getVariableValue('activeRoom1B') == true))
 			)
 			{
@@ -699,6 +713,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateBackgroundColor = 1;
 			}
+			else if (
+				((player.getVariableValue('var_hs') == 1)) && 
+				((me.ggUserdata.title != "Room 1B"))
+			)
+			{
+				newLogicStateBackgroundColor = 2;
+			}
 			else {
 				newLogicStateBackgroundColor = -1;
 			}
@@ -709,6 +730,9 @@ function pano2vrSkin(player,base) {
 					me._room_1b.style.backgroundColor="rgba(208,96,45,1)";
 				}
 				else if (me._room_1b.ggCurrentLogicStateBackgroundColor == 1) {
+					me._room_1b.style.backgroundColor="rgba(255,255,255,1)";
+				}
+				else if (me._room_1b.ggCurrentLogicStateBackgroundColor == 2) {
 					me._room_1b.style.backgroundColor="rgba(255,255,255,1)";
 				}
 				else {
@@ -742,7 +766,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 50px;';
 		hs+='left : 244px;';
 		hs+='position : absolute;';
-		hs+='top : 239px;';
+		hs+='top : 235px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -764,7 +788,8 @@ function pano2vrSkin(player,base) {
 			var newLogicStateScaling;
 			if (
 				((player.getVariableValue('var_hs') == 1)) && 
-				((player.getVariableValue('activeRoom1C') == false))
+				((player.getVariableValue('activeRoom1C') == false)) && 
+				((me.ggUserdata.title != "Room 1C"))
 			)
 			{
 				newLogicStateScaling = 0;
@@ -790,6 +815,7 @@ function pano2vrSkin(player,base) {
 		me._room_1c.logicBlock_backgroundcolor = function() {
 			var newLogicStateBackgroundColor;
 			if (
+				((me.ggUserdata.title == "Room 1C")) || 
 				((player.getVariableValue('activeRoom1C') == true))
 			)
 			{
@@ -802,6 +828,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateBackgroundColor = 1;
 			}
+			else if (
+				((player.getVariableValue('var_hs') == 1)) && 
+				((me.ggUserdata.title != "Room 1C"))
+			)
+			{
+				newLogicStateBackgroundColor = 2;
+			}
 			else {
 				newLogicStateBackgroundColor = -1;
 			}
@@ -812,6 +845,9 @@ function pano2vrSkin(player,base) {
 					me._room_1c.style.backgroundColor="rgba(208,96,45,1)";
 				}
 				else if (me._room_1c.ggCurrentLogicStateBackgroundColor == 1) {
+					me._room_1c.style.backgroundColor="rgba(255,255,255,1)";
+				}
+				else if (me._room_1c.ggCurrentLogicStateBackgroundColor == 2) {
 					me._room_1c.style.backgroundColor="rgba(255,255,255,1)";
 				}
 				else {
@@ -845,7 +881,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 50px;';
 		hs+='left : 552px;';
 		hs+='position : absolute;';
-		hs+='top : 267px;';
+		hs+='top : 265px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -867,7 +903,8 @@ function pano2vrSkin(player,base) {
 			var newLogicStateScaling;
 			if (
 				((player.getVariableValue('var_hs') == 1)) && 
-				((player.getVariableValue('activeRoom2A') == false))
+				((player.getVariableValue('activeRoom2A') == false)) && 
+				((me.ggUserdata.title != "Room 2A"))
 			)
 			{
 				newLogicStateScaling = 0;
@@ -893,6 +930,7 @@ function pano2vrSkin(player,base) {
 		me._room_2a.logicBlock_backgroundcolor = function() {
 			var newLogicStateBackgroundColor;
 			if (
+				((me.ggUserdata.title == "Room 2A")) || 
 				((player.getVariableValue('activeRoom2A') == true))
 			)
 			{
@@ -905,6 +943,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateBackgroundColor = 1;
 			}
+			else if (
+				((player.getVariableValue('var_hs') == 1)) && 
+				((me.ggUserdata.title != "Room 2A"))
+			)
+			{
+				newLogicStateBackgroundColor = 2;
+			}
 			else {
 				newLogicStateBackgroundColor = -1;
 			}
@@ -915,6 +960,9 @@ function pano2vrSkin(player,base) {
 					me._room_2a.style.backgroundColor="rgba(208,96,45,1)";
 				}
 				else if (me._room_2a.ggCurrentLogicStateBackgroundColor == 1) {
+					me._room_2a.style.backgroundColor="rgba(255,255,255,1)";
+				}
+				else if (me._room_2a.ggCurrentLogicStateBackgroundColor == 2) {
 					me._room_2a.style.backgroundColor="rgba(255,255,255,1)";
 				}
 				else {
@@ -948,7 +996,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : 50px;';
 		hs+='left : 552px;';
 		hs+='position : absolute;';
-		hs+='top : 106px;';
+		hs+='top : 105px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -970,7 +1018,8 @@ function pano2vrSkin(player,base) {
 			var newLogicStateScaling;
 			if (
 				((player.getVariableValue('var_hs') == 1)) && 
-				((player.getVariableValue('activeRoom2B') == false))
+				((player.getVariableValue('activeRoom2B') == false)) && 
+				((me.ggUserdata.title != "Room 2B"))
 			)
 			{
 				newLogicStateScaling = 0;
@@ -996,6 +1045,7 @@ function pano2vrSkin(player,base) {
 		me._room_2b.logicBlock_backgroundcolor = function() {
 			var newLogicStateBackgroundColor;
 			if (
+				((me.ggUserdata.title == "Room 2B")) || 
 				((player.getVariableValue('activeRoom2B') == true))
 			)
 			{
@@ -1008,6 +1058,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateBackgroundColor = 1;
 			}
+			else if (
+				((player.getVariableValue('var_hs') == 1)) && 
+				((me.ggUserdata.title != "Room 2B"))
+			)
+			{
+				newLogicStateBackgroundColor = 2;
+			}
 			else {
 				newLogicStateBackgroundColor = -1;
 			}
@@ -1018,6 +1075,9 @@ function pano2vrSkin(player,base) {
 					me._room_2b.style.backgroundColor="rgba(208,96,45,1)";
 				}
 				else if (me._room_2b.ggCurrentLogicStateBackgroundColor == 1) {
+					me._room_2b.style.backgroundColor="rgba(255,255,255,1)";
+				}
+				else if (me._room_2b.ggCurrentLogicStateBackgroundColor == 2) {
 					me._room_2b.style.backgroundColor="rgba(255,255,255,1)";
 				}
 				else {
@@ -2361,9 +2421,9 @@ function pano2vrSkin(player,base) {
 		el.ggType='hotspot';
 		hs ='';
 		hs+='height : 0px;';
-		hs+='left : 71px;';
+		hs+='left : 70px;';
 		hs+='position : absolute;';
-		hs+='top : 220px;';
+		hs+='top : 219px;';
 		hs+='visibility : inherit;';
 		hs+='width : 0px;';
 		hs+='pointer-events:auto;';
@@ -2388,10 +2448,38 @@ function pano2vrSkin(player,base) {
 			player.openNext(me.hotspot.url,me.hotspot.target);
 			if (
 				(
-					((me.hotspot.title == "Room 1A"))
+					((me.ggUserdata.title != "Room 1A"))
 				)
 			) {
 				player.setVariableValue('activeRoom1A', false);
+			}
+			if (
+				(
+					((me.ggUserdata.title != "Room 1B"))
+				)
+			) {
+				player.setVariableValue('activeRoom1B', false);
+			}
+			if (
+				(
+					((me.ggUserdata.title != "Room 1C"))
+				)
+			) {
+				player.setVariableValue('activeRoom1C', false);
+			}
+			if (
+				(
+					((me.ggUserdata.title != "Room 2A"))
+				)
+			) {
+				player.setVariableValue('activeRoom2A', false);
+			}
+			if (
+				(
+					((me.ggUserdata.title != "Room 2B"))
+				)
+			) {
+				player.setVariableValue('activeRoom2B', false);
 			}
 			skin.hotspotProxyClick(me.hotspot.id, me.hotspot.url);
 		}
@@ -3324,10 +3412,11 @@ this.__div.style.top = vs.height / 2 + "px";
 	player.addListener('sizechanged', function(args) { me._tt_enter_vr.logicBlock_position(); });
 	player.addListener('changenode', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor();me._meeting_table_and_chairs_1.logicBlock_alpha();me._mounted_screen_1.logicBlock_alpha();me._mounted_screen_2.logicBlock_alpha();me._meeting_table_and_chairs_2.logicBlock_alpha();me._coffe_area.logicBlock_alpha();me._information.logicBlock_visible(); });
 	player.addListener('configloaded', function(args) { me._enter_vr.logicBlock_visible(); });
+	player.addListener('activehotspotchanged', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor(); });
 	player.addListener('varchanged_vis_info_popup', function(args) { me._information.logicBlock_visible(); });
 	player.addListener('varchanged_TITLES', function(args) { me._meeting_table_and_chairs_1.logicBlock_alpha();me._mounted_screen_1.logicBlock_alpha();me._mounted_screen_2.logicBlock_alpha();me._meeting_table_and_chairs_2.logicBlock_alpha();me._coffe_area.logicBlock_alpha(); });
-	player.addListener('varchanged_var_hs', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor(); });
 	player.addListener('varchanged_activeRoom1A', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor(); });
+	player.addListener('varchanged_var_hs', function(args) { me._room_1a.logicBlock_scaling();me._room_1a.logicBlock_backgroundcolor();me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor();me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor();me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor();me._room_2b.logicBlock_scaling();me._room_2b.logicBlock_backgroundcolor(); });
 	player.addListener('varchanged_activeRoom1B', function(args) { me._room_1b.logicBlock_scaling();me._room_1b.logicBlock_backgroundcolor(); });
 	player.addListener('varchanged_activeRoom1C', function(args) { me._room_1c.logicBlock_scaling();me._room_1c.logicBlock_backgroundcolor(); });
 	player.addListener('varchanged_activeRoom2A', function(args) { me._room_2a.logicBlock_scaling();me._room_2a.logicBlock_backgroundcolor(); });
