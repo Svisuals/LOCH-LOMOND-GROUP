@@ -1,154 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tour apprev="18080" start="node1" appversion="6.1.13">
   <panorama id="node1">
-    <input leveltilesize="510" height="1536" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" levelingroll="0" overlap="1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="1536" width="1536" preload="0" predecode="0"/>
-      <level height="768" width="768" preload="0" predecode="0"/>
-      <level height="384" width="384" preload="1" predecode="1"/>
+    <input levelbias="0.400" levelingroll="0" levelingpitch="0" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" leveltilesize="510" levelbiashidpi="1.000" overlap="1" height="1536">
+      <level preload="0" predecode="0" width="1536" height="1536"/>
+      <level preload="0" predecode="0" width="768" height="768"/>
+      <level preload="1" predecode="1" width="384" height="384"/>
       <preview strip="1" color="0x808080"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start projection="4" tilt="0" pan="0" fov="70"/>
-      <flyin projection="9" tilt="-90" pan="0" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360" fov="120"/>
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovstereographic="270" scaletofit="1" fovfisheye="360"/>
     </view>
-    <userdata datetime="" heading="0" title="Room 1A" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="node1" latitude="" comment="" tags="Path Tracer"/>
-    <hotspots wordwrap="1" height="20" width="180">
-      <label backgroundalpha="1" wordwrap="1" bordercolor="0x000000" height="20" border="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" borderalpha="1" textalpha="1" borderradius="1"/>
-      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot skinid="ht_node" title="Room 1B" url="{node2}" target="" tilt="-7.58" description="" pan="-354.11" id="Point01"/>
-      <hotspot skinid="ht_info" title="" url="" target="" tilt="-5.81" description="Champagne PIAFF is here to Make Life Pop!&#xa;Our style is FRESH VIBRANT &amp; PLAYFUL.&#xa;It's for those who care more about the journey than the destination, spontaneous occasions over waiting to pop a bottle. Making memories with people you'll never forget.&#xa;Champagne PIAFF is more than just a drink, we're a celebration of life's moments - whether a grand occasion or an intimate gathering, we're about bringing people together.&#xa;So let's raise a glass to a future filled with endless possibilities, boundless creativity and timeless elegance!" pan="-251" id="Point02"/>
-      <hotspot skinid="ht_info" title="" url="" target="" tilt="-6.26" description="Before Ben Lomond was a gin, it was a mountain. But more than a mountain, it was a meeting point. A place where East met West, and land met sky. Derived from the celtic ‘Lumon’, Ben Lomond translates to ‘Beacon Mountain’. Historically a burning fire atop would have guided people from the four corners of Scotland and beyond. Those curious enough to make it to the summit will have been rewarded - unlocking views of further adventure. So fill your glass and journey on. Ben Lomond gave us an adventurous spirit, we bottled it." pan="-266.28" id="Point03"/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="Path Tracer" latitude="" author="" heading="0" title="Room 1A" nodeid="node1" description="" copyright="" source="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" backgroundalpha="1" background="1" textalpha="1" width="180" enabled="1" backgroundcolor="0xffffff" border="1" borderalpha="1" height="20" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot target="" pan="-354.11" tilt="-7.58" id="Point01" skinid="ht_node" title="Room 1B" description="" url="{node2}"/>
+      <hotspot target="" pan="-251" tilt="-5.81" id="Point02" skinid="ht_info" title="" description="Champagne PIAFF is here to Make Life Pop!&#xa;Our style is FRESH VIBRANT &amp; PLAYFUL.&#xa;It's for those who care more about the journey than the destination, spontaneous occasions over waiting to pop a bottle. Making memories with people you'll never forget.&#xa;Champagne PIAFF is more than just a drink, we're a celebration of life's moments - whether a grand occasion or an intimate gathering, we're about bringing people together.&#xa;So let's raise a glass to a future filled with endless possibilities, boundless creativity and timeless elegance!" url=""/>
+      <hotspot target="" pan="-266.28" tilt="-6.26" id="Point03" skinid="ht_info" title="" description="Before Ben Lomond was a gin, it was a mountain. But more than a mountain, it was a meeting point. A place where East met West, and land met sky. Derived from the celtic ‘Lumon’, Ben Lomond translates to ‘Beacon Mountain’. Historically a burning fire atop would have guided people from the four corners of Scotland and beyond. Those curious enough to make it to the summit will have been rewarded - unlocking views of further adventure. So fill your glass and journey on. Ben Lomond gave us an adventurous spirit, we bottled it." url=""/>
     </hotspots>
     <media>
-      <video tiltsize="10.000" handcursor="0" width="1280" tilt="-8.910" fov="26.110" clickmode="2" id="Element01" field="90.000" mode="2" pansize="10.000" rotz="-5.000" roty="-28.000" loop="100" ambientlevel="0.000" startmutedmobile="0" level="0.500" nodechangekeep="0" pan="-307.890" rotx="-9.000" stretch="1.110" height="720">
+      <video height="720" clickmode="2" startmutedmobile="0" ambientlevel="0.000" pansize="10.000" tilt="-8.910" level="0.500" roty="-28.000" id="Element01" rotz="-5.000" loop="100" handcursor="0" rotx="-9.000" fov="26.110" tiltsize="10.000" field="90.000" nodechangekeep="0" mode="2" stretch="1.110" pan="-307.890" width="1280">
         <source url="media/Institutional.mp4"/>
       </video>
     </media>
-    <transition blendcolor="0x000000" zoomout="0" zoomspeed="2" enabled="1" zoomfov="20" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomin="0" zoomafteroutfov="20" softedge="0" zoomafterinfov="90"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control speedwheel="1" sensitivity="8" rubberband="0" dblclickfullscreen="1" contextfullscreen="0" lockedmouse="0" contextprojections="0" lockedwheel="0" invertcontrol="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" simulatemass="1" contextvr="1" hideabout="0"/>
+    <transition zoomafteroutfov="20" zoomin="0" zoomfov="20" zoomout="0" blendcolor="0x000000" type="crossdissolve" zoomoutpause="1" zoomafterinfov="90" enabled="1" blendtime="1" softedge="0" zoomspeed="2"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextvr="1" simulatemass="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedmouse="0" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedwheel="0" dblclickfullscreen="1" contextfullscreen="0" lockedkeyboardzoom="0" hideabout="0" rubberband="0"/>
   </panorama>
   <panorama id="node2">
-    <input leveltilesize="510" height="1536" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" levelingroll="0" overlap="1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="1536" width="1536" preload="0" predecode="0"/>
-      <level height="768" width="768" preload="0" predecode="0"/>
-      <level height="384" width="384" preload="1" predecode="1"/>
+    <input levelbias="0.400" levelingroll="0" levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" leveltilesize="510" levelbiashidpi="1.000" overlap="1" height="1536">
+      <level preload="0" predecode="0" width="1536" height="1536"/>
+      <level preload="0" predecode="0" width="768" height="768"/>
+      <level preload="1" predecode="1" width="384" height="384"/>
       <preview strip="1" color="0x808080"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start projection="4" tilt="0" pan="0" fov="70"/>
-      <flyin projection="9" tilt="-90" pan="0" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360" fov="120"/>
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovstereographic="270" scaletofit="1" fovfisheye="360"/>
     </view>
-    <userdata datetime="" heading="0" title="Room 1B" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="node2" latitude="" comment="" tags="Path Tracer"/>
-    <hotspots wordwrap="1" height="20" width="180">
-      <label backgroundalpha="1" wordwrap="1" bordercolor="0x000000" height="20" border="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" borderalpha="1" textalpha="1" borderradius="1"/>
-      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot skinid="ht_node" title="Room 2A" url="{node4}" target="" tilt="-6.8" description="" pan="-38.44" id="Point01"/>
-      <hotspot skinid="ht_node" title="Room 1C" url="{node3}" target="" tilt="-3.87" description="" pan="-101.03" id="Point02"/>
-      <hotspot skinid="ht_node" title="Room 1A" url="{node1}" target="" tilt="-1.96" description="" pan="-177.21" id="Point03"/>
-      <hotspot skinid="ht_info" title="" url="" target="" tilt="-6.6" description="THE REAL STORY OF LITTLEMILL DISTILLERY BEGINS OVER TWO CENTURIES AGO. IN 1750 ARCHIBALD BUCHANAN PURCHASED AUCHENTORLIE ESTATE, JUST A FEW MILES WEST OF LOCH LOMOND ON THE BANKS OF THE RIVER CLYDE, FROM HIS BROTHER ANDREW. AND WITH IT, A BREWERY CALLED LITTLEMILL." pan="-308.27" id="Point04"/>
-      <hotspot skinid="ht_info" title="" url="" target="" tilt="-5.7" description="Glen Scotia single malts are excellent examples of the Campbeltown style, with rich and subtly maritime, with tropical and baked fruit notes and salty finish that set them apart from other Scotch malts. Distilled and aged to perfection, a single malt from our collection is the perfect late-night sip or gift for any whisky lover. Discover our collection of incredible Scottish whisky below from our aged malts to whisky gift sets." pan="-317.84" id="Point05"/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="Path Tracer" latitude="" author="" heading="0" title="Room 1B" nodeid="node2" description="" copyright="" source="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" backgroundalpha="1" background="1" textalpha="1" width="180" enabled="1" backgroundcolor="0xffffff" border="1" borderalpha="1" height="20" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot target="" pan="-38.44" tilt="-6.8" id="Point01" skinid="ht_node" title="Room 2A" description="" url="{node4}"/>
+      <hotspot target="" pan="-101.03" tilt="-3.87" id="Point02" skinid="ht_node" title="Room 1C" description="" url="{node3}"/>
+      <hotspot target="" pan="-177.21" tilt="-1.96" id="Point03" skinid="ht_node" title="Room 1A" description="" url="{node1}"/>
+      <hotspot target="" pan="-308.27" tilt="-6.6" id="Point04" skinid="ht_info" title="" description="THE REAL STORY OF LITTLEMILL DISTILLERY BEGINS OVER TWO CENTURIES AGO. IN 1750 ARCHIBALD BUCHANAN PURCHASED AUCHENTORLIE ESTATE, JUST A FEW MILES WEST OF LOCH LOMOND ON THE BANKS OF THE RIVER CLYDE, FROM HIS BROTHER ANDREW. AND WITH IT, A BREWERY CALLED LITTLEMILL." url=""/>
+      <hotspot target="" pan="-317.84" tilt="-5.7" id="Point05" skinid="ht_info" title="" description="Glen Scotia single malts are excellent examples of the Campbeltown style, with rich and subtly maritime, with tropical and baked fruit notes and salty finish that set them apart from other Scotch malts. Distilled and aged to perfection, a single malt from our collection is the perfect late-night sip or gift for any whisky lover. Discover our collection of incredible Scottish whisky below from our aged malts to whisky gift sets." url=""/>
     </hotspots>
     <media>
-      <video tiltsize="10.000" handcursor="0" width="1280" tilt="-12.740" fov="40.580" clickmode="2" id="Element01" field="90.000" mode="2" pansize="10.000" rotz="4.000" roty="17.000" loop="100" ambientlevel="0.000" startmutedmobile="0" level="0.500" nodechangekeep="0" pan="-252.120" rotx="-12.000" stretch="1.000" height="720">
+      <video height="720" clickmode="2" startmutedmobile="0" ambientlevel="0.000" pansize="10.000" tilt="-12.740" level="0.500" roty="17.000" id="Element01" rotz="4.000" loop="100" handcursor="0" rotx="-12.000" fov="40.580" tiltsize="10.000" field="90.000" nodechangekeep="0" mode="2" stretch="1.000" pan="-252.120" width="1280">
         <source url="media/Institutional.mp4"/>
       </video>
     </media>
-    <transition blendcolor="0x000000" zoomout="0" zoomspeed="2" enabled="1" zoomfov="20" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomin="0" zoomafteroutfov="20" softedge="0" zoomafterinfov="90"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control speedwheel="1" sensitivity="8" rubberband="0" dblclickfullscreen="1" contextfullscreen="0" lockedmouse="0" contextprojections="0" lockedwheel="0" invertcontrol="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" simulatemass="1" contextvr="1" hideabout="0"/>
+    <transition zoomafteroutfov="20" zoomin="0" zoomfov="20" zoomout="0" blendcolor="0x000000" type="crossdissolve" zoomoutpause="1" zoomafterinfov="90" enabled="1" blendtime="1" softedge="0" zoomspeed="2"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextvr="1" simulatemass="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedmouse="0" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedwheel="0" dblclickfullscreen="1" contextfullscreen="0" lockedkeyboardzoom="0" hideabout="0" rubberband="0"/>
   </panorama>
   <panorama id="node3">
-    <input leveltilesize="510" height="1536" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" levelingroll="0" overlap="1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="1536" width="1536" preload="0" predecode="0"/>
-      <level height="768" width="768" preload="0" predecode="0"/>
-      <level height="384" width="384" preload="1" predecode="1"/>
+    <input levelbias="0.400" levelingroll="0" levelingpitch="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" leveltilesize="510" levelbiashidpi="1.000" overlap="1" height="1536">
+      <level preload="0" predecode="0" width="1536" height="1536"/>
+      <level preload="0" predecode="0" width="768" height="768"/>
+      <level preload="1" predecode="1" width="384" height="384"/>
       <preview strip="1" color="0x808080"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start projection="4" tilt="0" pan="0" fov="70"/>
-      <flyin projection="9" tilt="-90" pan="0" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360" fov="120"/>
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovstereographic="270" scaletofit="1" fovfisheye="360"/>
     </view>
-    <userdata datetime="" heading="0" title="Room 1C" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="node3" latitude="" comment="" tags="Path Tracer"/>
-    <hotspots wordwrap="1" height="20" width="180">
-      <label backgroundalpha="1" wordwrap="1" bordercolor="0x000000" height="20" border="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" borderalpha="1" textalpha="1" borderradius="1"/>
-      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot skinid="ht_node" title="Room 2A" url="{node4}" target="" tilt="-11.28" description="" pan="-9.58" id="Point01"/>
-      <hotspot skinid="ht_node" title="Room 1B" url="{node2}" target="" tilt="-16.18" description="" pan="-261.64" id="Point02"/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="Path Tracer" latitude="" author="" heading="0" title="Room 1C" nodeid="node3" description="" copyright="" source="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" backgroundalpha="1" background="1" textalpha="1" width="180" enabled="1" backgroundcolor="0xffffff" border="1" borderalpha="1" height="20" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot target="" pan="-9.58" tilt="-11.28" id="Point01" skinid="ht_node" title="Room 2A" description="" url="{node4}"/>
+      <hotspot target="" pan="-261.64" tilt="-16.18" id="Point02" skinid="ht_node" title="Room 1B" description="" url="{node2}"/>
     </hotspots>
     <media>
-      <video tiltsize="10.000" handcursor="0" width="1280" tilt="-6.730" fov="22.220" clickmode="2" id="Element01" field="90.000" mode="2" pansize="10.000" rotz="1.000" roty="8.000" loop="100" ambientlevel="0.000" startmutedmobile="0" level="0.500" nodechangekeep="0" pan="-261.200" rotx="0.000" stretch="1.000" height="720">
+      <video height="720" clickmode="2" startmutedmobile="0" ambientlevel="0.000" pansize="10.000" tilt="-6.730" level="0.500" roty="8.000" id="Element01" rotz="1.000" loop="100" handcursor="0" rotx="0.000" fov="22.220" tiltsize="10.000" field="90.000" nodechangekeep="0" mode="2" stretch="1.000" pan="-261.200" width="1280">
         <source url="media/Institutional.mp4"/>
       </video>
     </media>
-    <transition blendcolor="0x000000" zoomout="0" zoomspeed="2" enabled="1" zoomfov="20" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomin="0" zoomafteroutfov="20" softedge="0" zoomafterinfov="90"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control speedwheel="1" sensitivity="8" rubberband="0" dblclickfullscreen="1" contextfullscreen="0" lockedmouse="0" contextprojections="0" lockedwheel="0" invertcontrol="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" simulatemass="1" contextvr="1" hideabout="0"/>
+    <transition zoomafteroutfov="20" zoomin="0" zoomfov="20" zoomout="0" blendcolor="0x000000" type="crossdissolve" zoomoutpause="1" zoomafterinfov="90" enabled="1" blendtime="1" softedge="0" zoomspeed="2"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextvr="1" simulatemass="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedmouse="0" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedwheel="0" dblclickfullscreen="1" contextfullscreen="0" lockedkeyboardzoom="0" hideabout="0" rubberband="0"/>
   </panorama>
   <panorama id="node4">
-    <input leveltilesize="510" height="1536" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" levelingroll="0" overlap="1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="1536" width="1536" preload="0" predecode="0"/>
-      <level height="768" width="768" preload="0" predecode="0"/>
-      <level height="384" width="384" preload="1" predecode="1"/>
+    <input levelbias="0.400" levelingroll="0" levelingpitch="0" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" leveltilesize="510" levelbiashidpi="1.000" overlap="1" height="1536">
+      <level preload="0" predecode="0" width="1536" height="1536"/>
+      <level preload="0" predecode="0" width="768" height="768"/>
+      <level preload="1" predecode="1" width="384" height="384"/>
       <preview strip="1" color="0x808080"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start projection="4" tilt="-22.7822" pan="61.4796" fov="70"/>
-      <flyin projection="9" tilt="-90" pan="0" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360" fov="120"/>
+      <start pan="61.4796" tilt="-22.7822" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovstereographic="270" scaletofit="1" fovfisheye="360"/>
     </view>
-    <userdata datetime="" heading="0" title="Room 2A" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="node4" latitude="" comment="" tags="Path Tracer"/>
-    <hotspots wordwrap="1" height="20" width="180">
-      <label backgroundalpha="1" wordwrap="1" bordercolor="0x000000" height="20" border="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" borderalpha="1" textalpha="1" borderradius="1"/>
-      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot skinid="ht_node" title="Room 1B" url="{node2}" target="" tilt="-10.24" description="" pan="-176.55" id="Point01"/>
-      <hotspot skinid="ht_node" title="Room 2B" url="{node5}" target="" tilt="-9.36" description="" pan="-269.92" id="Point02"/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="Path Tracer" latitude="" author="" heading="0" title="Room 2A" nodeid="node4" description="" copyright="" source="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" backgroundalpha="1" background="1" textalpha="1" width="180" enabled="1" backgroundcolor="0xffffff" border="1" borderalpha="1" height="20" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot target="" pan="-176.55" tilt="-10.24" id="Point01" skinid="ht_node" title="Room 1B" description="" url="{node2}"/>
+      <hotspot target="" pan="-269.92" tilt="-9.36" id="Point02" skinid="ht_node" title="Room 2B" description="" url="{node5}"/>
     </hotspots>
     <media>
-      <video tiltsize="10.000" handcursor="0" width="1280" tilt="-0.150" fov="19.320" clickmode="2" id="Element01" field="90.000" mode="2" pansize="10.000" rotz="1.000" roty="2.000" loop="100" ambientlevel="0.000" startmutedmobile="0" level="0.500" nodechangekeep="0" pan="-268.370" rotx="-3.000" stretch="1.000" height="720">
+      <video height="720" clickmode="2" startmutedmobile="0" ambientlevel="0.000" pansize="10.000" tilt="-0.150" level="0.500" roty="2.000" id="Element01" rotz="1.000" loop="100" handcursor="0" rotx="-3.000" fov="19.320" tiltsize="10.000" field="90.000" nodechangekeep="0" mode="2" stretch="1.000" pan="-268.370" width="1280">
         <source url="media/Institutional.mp4"/>
       </video>
     </media>
-    <transition blendcolor="0x000000" zoomout="0" zoomspeed="2" enabled="1" zoomfov="20" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomin="0" zoomafteroutfov="20" softedge="0" zoomafterinfov="90"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control speedwheel="1" sensitivity="8" rubberband="0" dblclickfullscreen="1" contextfullscreen="0" lockedmouse="0" contextprojections="0" lockedwheel="0" invertcontrol="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" simulatemass="1" contextvr="1" hideabout="0"/>
+    <transition zoomafteroutfov="20" zoomin="0" zoomfov="20" zoomout="0" blendcolor="0x000000" type="crossdissolve" zoomoutpause="1" zoomafterinfov="90" enabled="1" blendtime="1" softedge="0" zoomspeed="2"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextvr="1" simulatemass="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedmouse="0" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedwheel="0" dblclickfullscreen="1" contextfullscreen="0" lockedkeyboardzoom="0" hideabout="0" rubberband="0"/>
   </panorama>
   <panorama id="node5">
-    <input leveltilesize="510" height="1536" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" levelingroll="0" overlap="1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="1536" width="1536" preload="0" predecode="0"/>
-      <level height="768" width="768" preload="0" predecode="0"/>
-      <level height="384" width="384" preload="1" predecode="1"/>
+    <input levelbias="0.400" levelingroll="0" levelingpitch="0" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1536" leveltilesize="510" levelbiashidpi="1.000" overlap="1" height="1536">
+      <level preload="0" predecode="0" width="1536" height="1536"/>
+      <level preload="0" predecode="0" width="768" height="768"/>
+      <level preload="1" predecode="1" width="384" height="384"/>
       <preview strip="1" color="0x808080"/>
     </input>
     <view fovmode="0" pannorth="0">
-      <start projection="4" tilt="-25.1848" pan="-160.316" fov="70"/>
-      <flyin projection="9" tilt="-90" pan="0" fov="170"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360" fov="120"/>
+      <start pan="-160.316" tilt="-25.1848" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovstereographic="270" scaletofit="1" fovfisheye="360"/>
     </view>
-    <userdata datetime="" heading="0" title="Room 2B" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="node5" latitude="" comment="" tags="Path Tracer"/>
-    <hotspots wordwrap="1" height="20" width="180">
-      <label backgroundalpha="1" wordwrap="1" bordercolor="0x000000" height="20" border="1" textcolor="0x000000" enabled="1" width="180" backgroundcolor="0xffffff" background="1" borderalpha="1" textalpha="1" borderradius="1"/>
-      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
-      <hotspot skinid="ht_node" title="Room 2A" url="{node4}" target="" tilt="-1.91" description="" pan="-92.97" id="Point01"/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="Path Tracer" latitude="" author="" heading="0" title="Room 2B" nodeid="node5" description="" copyright="" source="" datetime=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label textcolor="0x000000" backgroundalpha="1" background="1" textalpha="1" width="180" enabled="1" backgroundcolor="0xffffff" border="1" borderalpha="1" height="20" bordercolor="0x000000" borderradius="1" wordwrap="1"/>
+      <polystyle handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+      <hotspot target="" pan="-92.97" tilt="-1.91" id="Point01" skinid="ht_node" title="Room 2A" description="" url="{node4}"/>
     </hotspots>
     <media>
-      <video tiltsize="10.000" handcursor="0" width="1280" tilt="0.040" fov="49.490" clickmode="2" id="Element01" field="90.000" mode="2" pansize="10.000" rotz="0.000" roty="6.000" loop="100" ambientlevel="0.000" startmutedmobile="0" level="0.500" nodechangekeep="0" pan="-263.950" rotx="0.000" stretch="1.000" height="720">
+      <video height="720" clickmode="2" startmutedmobile="0" ambientlevel="0.000" pansize="10.000" tilt="0.040" level="0.500" roty="6.000" id="Element01" rotz="0.000" loop="100" handcursor="0" rotx="0.000" fov="49.490" tiltsize="10.000" field="90.000" nodechangekeep="0" mode="2" stretch="1.000" pan="-263.950" width="1280">
         <source url="media/Institutional.mp4"/>
       </video>
     </media>
-    <transition blendcolor="0x000000" zoomout="0" zoomspeed="2" enabled="1" zoomfov="20" zoomoutpause="1" blendtime="1" type="crossdissolve" zoomin="0" zoomafteroutfov="20" softedge="0" zoomafterinfov="90"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
-    <control speedwheel="1" sensitivity="8" rubberband="0" dblclickfullscreen="1" contextfullscreen="0" lockedmouse="0" contextprojections="0" lockedwheel="0" invertcontrol="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" simulatemass="1" contextvr="1" hideabout="0"/>
+    <transition zoomafteroutfov="20" zoomin="0" zoomfov="20" zoomout="0" blendcolor="0x000000" type="crossdissolve" zoomoutpause="1" zoomafterinfov="90" enabled="1" blendtime="1" softedge="0" zoomspeed="2"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control contextvr="1" simulatemass="1" contextprojections="0" invertwheel="0" invertcontrol="1" lockedmouse="0" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedwheel="0" dblclickfullscreen="1" contextfullscreen="0" lockedkeyboardzoom="0" hideabout="0" rubberband="0"/>
   </panorama>
   <masternode>
-    <userdata datetime="" heading="0" title="" info="" customnodeid="" copyright="" source="" longitude="" description="" author="" nodeid="master" latitude="" comment="" tags=""/>
+    <userdata info="" comment="" longitude="" customnodeid="" tags="" latitude="" author="" heading="0" title="" nodeid="master" description="" copyright="" source="" datetime=""/>
   </masternode>
 </tour>
