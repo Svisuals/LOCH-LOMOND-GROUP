@@ -53,11 +53,11 @@
         document.addEventListener("DOMContentLoaded", function() {
             var pano1 = new pano2vrPlayer("container1");
             var skin1 = new pano2vrSkin(pano1);
-            pano1.readConfigUrlAsync("SVisuals.xml");
+            pano1.readConfigUrlAsync("SVisuals1.xml");
 
             var pano2 = new pano2vrPlayer("container2");
             var skin2 = new pano2vrSkin(pano2);
-            pano2.readConfigUrlAsync("SVisuals.xml");
+            pano2.readConfigUrlAsync("SVisuals2.xml");
 
             // Adjust sizes on window resize
             window.addEventListener("resize", function() {
@@ -76,19 +76,16 @@
             adjustSizes();
 
             // Synchronize panning and tilting
-            var syncMovement = function(event) {
+            var syncMovement = function() {
                 var pan = pano1.getPan();
                 var tilt = pano1.getTilt();
                 pano2.setPan(pan);
                 pano2.setTilt(tilt);
             };
 
-            pano1.addEventListener("mousedown", syncMovement);
-            pano1.addEventListener("touchstart", syncMovement);
-            pano1.addEventListener("mouseup", syncMovement);
-            pano1.addEventListener("touchend", syncMovement);
-            pano1.addEventListener("mousemove", syncMovement);
-            pano1.addEventListener("touchmove", syncMovement);
+            // Listen to specific events for synchronization
+            pano1.addEventListener("change", syncMovement);
+            pano1.addEventListener("move", syncMovement);
         });
     </script>
     <noscript>
