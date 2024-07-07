@@ -74,6 +74,21 @@
 
             // Initial adjustment
             adjustSizes();
+
+            // Synchronize panning and tilting
+            var syncMovement = function(event) {
+                var pan = pano1.getPan();
+                var tilt = pano1.getTilt();
+                pano2.setPan(pan);
+                pano2.setTilt(tilt);
+            };
+
+            pano1.addEventListener("mousedown", syncMovement);
+            pano1.addEventListener("touchstart", syncMovement);
+            pano1.addEventListener("mouseup", syncMovement);
+            pano1.addEventListener("touchend", syncMovement);
+            pano1.addEventListener("mousemove", syncMovement);
+            pano1.addEventListener("touchmove", syncMovement);
         });
     </script>
     <noscript>
