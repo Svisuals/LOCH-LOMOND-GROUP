@@ -1,99 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LochLomondGroup360</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="mobile-web-app-capable" content="yes">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-        .split-container {
-            display: flex;
-            height: 100%;
-            overflow: hidden;
-        }
-        .split-pane {
-            width: 50%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-        .split-pane > div {
-            height: 100%;
-        }
-        ::-webkit-scrollbar {
-            background-color: rgba(0,0,0,0.5);
-            width: 0.75em;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: rgba(255,255,255,0.5);
-        }
-    </style>
-</head>
-<body>
-    <div class="split-container">
-        <div class="split-pane" id="container1">
-            <div>Loading Photo 1...</div>
-        </div>
-        <div class="split-pane" id="container2">
-            <div>Loading Photo 2...</div>
-        </div>
-    </div>
-    <script src="pano2vr_player.js" defer></script>
-    <script src="skin.js" defer></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var pano1 = new pano2vrPlayer("container1");
-            var skin1 = new pano2vrSkin(pano1);
-            pano1.readConfigUrlAsync("SVisuals.xml");
-
-            var pano2 = new pano2vrPlayer("container2");
-            var skin2 = new pano2vrSkin(pano2);
-            pano2.readConfigUrlAsync("SVisuals.xml");
-
-            // Function to synchronize pan and tilt
-            var syncPanTilt = function(panoFrom, panoTo) {
-                var pan = panoFrom.getPan();
-                var tilt = panoFrom.getTilt();
-                panoTo.setPan(pan);
-                panoTo.setTilt(tilt);
-            };
-
-            // Listen to specific events for synchronization
-            pano1.addEventListener("change", function() {
-                syncPanTilt(pano1, pano2);
-            });
-            pano1.addEventListener("move", function() {
-                syncPanTilt(pano1, pano2);
-            });
-
-            // Adjust sizes on window resize
-            window.addEventListener("resize", function() {
-                adjustSizes();
-            });
-
-            function adjustSizes() {
-                var splitContainer = document.querySelector(".split-container");
-                var panes = document.querySelectorAll(".split-pane");
-                panes.forEach(function(pane) {
-                    pane.style.width = (splitContainer.offsetWidth / 2) + "px";
-                });
-            }
-
-            // Initial adjustment
-            adjustSizes();
-        });
-    </script>
-    <noscript>
-        <p><b>Please enable Javascript!</b></p>
-    </noscript>
-</body>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title>LochLomondGroup360</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>	
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<script src="webxr/three.min.js"></script>
+		<script src="webxr/webxr-polyfill.min.js"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Loading...<br><br>
+		</div>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("SVisuals.xml");
+			});
+			if (window.navigator.userAgent.match(/AppleWebKit/i)) {
+				// fix for white borders, rotation on iPhone
+				function iosHfix(e) {
+					window.scrollTo(0, 1);
+					var container=document.getElementById("container");
+					var oh=container.offsetHeight;
+					document.documentElement.style.setProperty('height', '100vh');
+					if (oh!=container.offsetHeight) {
+						container.style.setProperty('height',"100%");
+					} else {
+						container.style.setProperty('height',window.innerHeight+"px");
+					}
+					window.scrollTo(0, 0);
+					pano.setViewerSize(container.offsetWidth, container.offsetHeight);
+				};
+				setTimeout(iosHfix,0);	
+				setTimeout(iosHfix,100);	
+				window.addEventListener("resize", function() {
+					setTimeout(iosHfix,0);
+					// hide toolbar on iPad happens with a delay
+					setTimeout(iosHfix,500);
+					setTimeout(iosHfix,1000);
+					setTimeout(iosHfix,2000);
+				});
+			}
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+	</body>
 </html>
