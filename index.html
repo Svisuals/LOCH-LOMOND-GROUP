@@ -59,6 +59,22 @@
             var skin2 = new pano2vrSkin(pano2);
             pano2.readConfigUrlAsync("SVisuals.xml");
 
+            // Function to synchronize pan and tilt
+            var syncPanTilt = function(panoFrom, panoTo) {
+                var pan = panoFrom.getPan();
+                var tilt = panoFrom.getTilt();
+                panoTo.setPan(pan);
+                panoTo.setTilt(tilt);
+            };
+
+            // Listen to specific events for synchronization
+            pano1.addEventListener("change", function() {
+                syncPanTilt(pano1, pano2);
+            });
+            pano1.addEventListener("move", function() {
+                syncPanTilt(pano1, pano2);
+            });
+
             // Adjust sizes on window resize
             window.addEventListener("resize", function() {
                 adjustSizes();
@@ -74,18 +90,6 @@
 
             // Initial adjustment
             adjustSizes();
-
-            // Synchronize panning and tilting
-            var syncMovement = function() {
-                var pan = pano1.getPan();
-                var tilt = pano1.getTilt();
-                pano2.setPan(pan);
-                pano2.setTilt(tilt);
-            };
-
-            // Listen to specific events for synchronization
-            pano1.addEventListener("change", syncMovement);
-            pano1.addEventListener("move", syncMovement);
         });
     </script>
     <noscript>
