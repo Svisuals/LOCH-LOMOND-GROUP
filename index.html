@@ -53,11 +53,11 @@
         document.addEventListener("DOMContentLoaded", function() {
             var pano1 = new pano2vrPlayer("container1");
             var skin1 = new pano2vrSkin(pano1);
-            pano1.readConfigUrlAsync("SVisuals1.xml");
+            pano1.readConfigUrlAsync("SVisuals.xml");
 
             var pano2 = new pano2vrPlayer("container2");
             var skin2 = new pano2vrSkin(pano2);
-            pano2.readConfigUrlAsync("SVisuals2.xml");
+            pano2.readConfigUrlAsync("SVisuals.xml");
 
             // Adjust sizes on window resize
             window.addEventListener("resize", function() {
